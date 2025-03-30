@@ -4,6 +4,11 @@
       <Header> Главная</Header>
       <!-- <DailyNorm></DailyNorm> -->
       <Bottom-bar></Bottom-bar>
+      <div class="first-block">
+        <Leftover :maxCalories="2000" :remainingCalories="700" :size="150" />
+        <Water   :current="1000" 
+        :goal="2500"></Water>
+      </div>
 
     </div>
   </div>
@@ -13,12 +18,14 @@
 import DailyNorm from '@/components/DailyNorm.vue';
 import Header from '@/components/Header.vue';
 import BottomBar from '@/components/BottomBar.vue';
+import Leftover from '@/components/Leftover.vue'
+import Water from '@/components/Water.vue'
 
 export default {
   
   name: "HomeView",
   components: {
-    Header, DailyNorm, BottomBar
+    Header, DailyNorm, BottomBar, Leftover, Water
   },
 };
 </script>
@@ -42,5 +49,11 @@ export default {
   z-index: 2;
   display: flex;
   flex-direction: column;
+}
+
+.first-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 </style>
