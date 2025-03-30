@@ -66,7 +66,7 @@ const scaleMarks = computed(() => {
 
 .water-container {
   position: relative;
-  width: 60px;
+  width: 80px;
   height: 145px;
   background-color: #E3F2FD;
   border-radius: 15px;

@@ -30,7 +30,9 @@
   margin: 0;
   padding: 0;
   font-size: 24px;
-  color: #DA6A00;
+  color: #14471E;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
   
 }
 
