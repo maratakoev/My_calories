@@ -1,33 +1,35 @@
 <template>
   <div class="home">
     <div class="content">
-      <Header></Header>
-      <DailyNorm></DailyNorm>
+      <Header> Главная</Header>
+      <!-- <DailyNorm></DailyNorm> -->
+      <Bottom-bar></Bottom-bar>
 
     </div>
-    
   </div>
 </template>
 
 <script>
 import DailyNorm from '@/components/DailyNorm.vue';
 import Header from '@/components/Header.vue';
+import BottomBar from '@/components/BottomBar.vue';
 
 export default {
   
   name: "HomeView",
   components: {
-    Header, DailyNorm,
+    Header, DailyNorm, BottomBar
   },
 };
 </script>
 
-<style scoped>
+<style >
 
 .home {
   width: 100%;
   height: 200vh;
-  background-image: url('@/assets/call_wallper.png');
+  background-color: #C8D2D1;
+  /* background-image: url('@/assets/call_wallper.png'); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
