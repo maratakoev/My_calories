@@ -36,7 +36,7 @@ export default {
 }
 
 .content {
-  width: 300px;
+  /* min-width: 380px; */
   height: 100vh;
   margin: 0 auto;
   z-index: 2;

@@ -36,7 +36,7 @@ const handleMenuClick = (action) => {
 <style scoped>
 .bottom-bar {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #68904D; /* Цвет фона */
   position: fixed;
   bottom: 0;
@@ -48,7 +48,7 @@ const handleMenuClick = (action) => {
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   max-width: 800px;
@@ -64,7 +64,7 @@ const handleMenuClick = (action) => {
   border: none;
   color: #14471E;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 8px 5%;
   transition: all 0.3s ease;
 }
 
@@ -73,22 +73,22 @@ const handleMenuClick = (action) => {
 }
 
 .icon {
-  width: 28px;
+  width: 35px;
   font-size: 25px;
   margin-bottom: 2px;
 }
 
 .label {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
 
 }
 
 /* Адаптивность для мобильных устройств */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .bottom-bar {
-    height: 50px;
+    height: 90px;
   }
   
   .icon {
@@ -98,5 +98,5 @@ const handleMenuClick = (action) => {
   .label {
     font-size: 10px;
   }
-}
+} */
 </style>
